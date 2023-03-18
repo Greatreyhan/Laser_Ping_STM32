@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"ping_laser_f407\startup_stm32f407xx.o"
+"ping_laser_f407\main.o"
+"ping_laser_f407\stm32f4xx_it.o"
+"ping_laser_f407\stm32f4xx_hal_msp.o"
+"ping_laser_f407\dwt_delay.o"
+"ping_laser_f407\ping_driver.o"
+"ping_laser_f407\stm32f4xx_hal_tim.o"
+"ping_laser_f407\stm32f4xx_hal_tim_ex.o"
+"ping_laser_f407\stm32f4xx_hal_rcc.o"
+"ping_laser_f407\stm32f4xx_hal_rcc_ex.o"
+"ping_laser_f407\stm32f4xx_hal_flash.o"
+"ping_laser_f407\stm32f4xx_hal_flash_ex.o"
+"ping_laser_f407\stm32f4xx_hal_flash_ramfunc.o"
+"ping_laser_f407\stm32f4xx_hal_gpio.o"
+"ping_laser_f407\stm32f4xx_hal_dma_ex.o"
+"ping_laser_f407\stm32f4xx_hal_dma.o"
+"ping_laser_f407\stm32f4xx_hal_pwr.o"
+"ping_laser_f407\stm32f4xx_hal_pwr_ex.o"
+"ping_laser_f407\stm32f4xx_hal_cortex.o"
+"ping_laser_f407\stm32f4xx_hal.o"
+"ping_laser_f407\stm32f4xx_hal_exti.o"
+"ping_laser_f407\system_stm32f4xx.o"
+--strict --scatter "PING_LASER_F407\PING_LASER_F407.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PING_LASER_F407.map" -o PING_LASER_F407\PING_LASER_F407.axf
